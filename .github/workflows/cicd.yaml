@@ -36,6 +36,7 @@ jobs:
         env:
           APP: "kbot"
         run: make image push
+        
   cd:
     name: CD
     needs: ci
