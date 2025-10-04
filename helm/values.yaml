@@ -1,15 +1,17 @@
 replicaCount: 1
 
 image:
-  repository: nasgul
+  registry: "ghcr.io"
+  repository: "nasgul/kbot"
+  pullPolicy: IfNotPresent 
   tag: "v1.0.3-9e18907"
+  os: linux
   arch: amd64
+  parameter: go
 secret:
   name: "kbot"
   env: "TELE_TOKEN"
-  key: "token"
+  key: "token" 
+  value: "NjU1MjQ2NzQ0OTpBQUZHR3k3WnREdjlpRExmdEx5OV85cDF5U0tNSTNkeU00aw=="
 securityContext:
   privileged: true
-
-autoscaling:
-  enabled: false
