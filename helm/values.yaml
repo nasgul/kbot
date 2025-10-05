@@ -7,11 +7,5 @@ image:
   tag: "v1.0.4-0793dd7"
   os: linux
   arch: amd64
-  parameter: go
-secret:
-  name: "kbot"
-  env: "TELE_TOKEN"
-  key: "token" 
-  value: "NjU1MjQ2NzQ0OTpBQUZHR3k3WnREdjlpRExmdEx5OV85cDF5U0tNSTNkeU00aw=="
 securityContext:
   privileged: true

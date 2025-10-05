@@ -21,7 +21,7 @@ D = \033[0m#   DEFAULT
 A = \007#      BEEP
 
 # Main variables
-APP = $(shell basename $(shell git remote get-url origin))
+APP = $(shell basename $(shell git remote get-url origin) .git)
 REGISTRY = ghcr.io/nasgul
 VERSION = $(shell git describe --tags --abbrev=0 2>/dev/null || echo v0.1.0)-$(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
 TELE_TOKEN = 111
