@@ -3,7 +3,7 @@ name: KBOT-CICD
 on: 
   push:
     branches:
-      - develop
+      - main
 env:
   TARGETOS: linux
   TARGETARCH: amd64
@@ -36,7 +36,7 @@ jobs:
         env:
           APP: "kbot"
         run: make image push
-        
+
   cd:
     name: CD
     needs: ci
