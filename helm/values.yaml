@@ -3,7 +3,7 @@ image:
   registry: "ghcr.io"
   repository: "nasgul/kbot"
   pullPolicy: IfNotPresent
-  tag: "v1.0.4-0793dd7-7d82fc1"
+  tag: "v1.0.4-0793dd7"
   os: linux
   arch: amd64
 securityContext:
